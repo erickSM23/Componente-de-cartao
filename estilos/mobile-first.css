@@ -113,16 +113,21 @@ div#fle {
 
 div#fle2 {
     margin-top: 20px;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 
     background-color: var(--DarkG);
-    border: 1px dotted black;
     border-radius: 7px;
-}   
+}
+
+div#fle2:hover {
+    background-color: hsl(157, 54%, 16%);
+
+    cursor: pointer;
+}
 
 div#fle2 > img#mgico {
     padding-right: 15px;
