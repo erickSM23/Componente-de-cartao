@@ -6,7 +6,7 @@
 
 
 :root {
-    --Dark:      hsl(158, 36%, 37%);
+    --DarkG:      hsl(158, 36%, 37%);
     --Cream:     hsl(30, 38%, 92%);
     --Verydark:  hsl(212, 21%, 14%);
     --Dark:      hsl(228, 12%, 48%);
@@ -16,11 +16,121 @@
     --font_titulo: "Fraunces", serif;
 }
 
-main > section {
-    font-size: 14px;
-    font-family: var;
+* {
+    margin:  0px;
+    padding: 0px;
+
+    box-sizing: border-box;
 }
 
-main > section > h1 {
+body, html {
+    height: 100vh;
+    width:  100vw;
+
+    background-color: blue;
+}
+
+main {
+    width:  100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--Cream);
+}
+
+main > section {
+    height: 665px;
+    width: 350px;
+    overflow: hidden;
+
+    background-color: var(--White);
+    color: var(--Dark);
+    border-radius: 10px;
+
+    font-family: var(--font_texto);
+}
+
+section > div#imagem {
+    height: 250px;
+
+    background: black url('../images/image-product-mobile.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+section > div#conteudo {
+    padding: 20px;   
+}
+
+div#conteudo > h1 {
+    padding: 20px 0px;
+
+    color: var(--Verydark);
+
+    font-size: 2em;
     font-family: var(--font_titulo);
+}
+
+div#conteudo > p {
+    text-align: left;
+}
+
+div#conteudo > p#p1 {
+    font-size: 13px;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+div#conteudo > p#p2 {
+    padding-bottom: 30px;
+
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+div#fle > p#p3 {
+    padding-right: 20px;
+
+    color: var(--DarkG);
+
+    font-size: 2.5em;
+    font-family: var(--font_titulo);
+    font-weight: 700;
+}
+
+div#fle > p#p4 {
+    text-decoration: line-through;
+}
+
+div#fle {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+}
+
+div#fle2 {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--DarkG);
+    border: 1px dotted black;
+    border-radius: 7px;
+}   
+
+div#fle2 > img#mgico {
+    padding-right: 15px;
+}
+
+div#fle2 > a#link {
+    color: white;
+
+    text-decoration: none;
+    font-weight: 560;
 }
