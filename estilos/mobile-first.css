@@ -54,6 +54,7 @@ main > section {
 }
 
 section > div#imagem {
+    display: block;
     height: 250px;
 
     background: black url('../images/image-product-mobile.jpg') no-repeat center center;
@@ -61,6 +62,7 @@ section > div#imagem {
 }
 
 section > div#conteudo {
+    display: block;
     padding: 20px;   
 }
 
