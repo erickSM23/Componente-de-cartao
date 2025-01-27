@@ -1,14 +1,32 @@
 @charset "UTF-8";
 
 main > section {
-    width: 90vw;
+    width: 45vw;
+    height: 485px;
 }
 section > div#imagem {
     float: left;
-    width: 0%;
+    width: 50%;
     height: 100%;
+
+    background: url('../images/image-product-desktop.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 section > div#conteudo {
     float: right;
+    height: 100%;
+    width: 50%;
+}
+
+div#conteudo > h1 {
+    font-size: 36px;
+}
+
+div#conteudo > div#fle {
+        
+}
+
+div#conteudo > div#fle2 {
+    
 }
